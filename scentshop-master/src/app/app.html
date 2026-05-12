@@ -1,0 +1,26 @@
+@if (service.showSuccess()) {
+  <div class="alert position-fixed top-0 start-50 translate-middle-x mt-3 shadow rounded-3 px-4 py-2" 
+       style="z-index: 9999; background-color: #2e7d32; color: white; border: none;">
+     Perfume added to cart
+  </div>
+}
+
+<nav class="navbar navbar-expand py-2 sticky-top" style="background: linear-gradient(to right, #f5ebe0, #fdf6ec); border-bottom: 2px solid #e8d5b5;">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" routerLink="/" style="text-decoration:none;">
+      <span class="fw-bold" style="font-family:'Playfair Display',serif; font-size:1.4rem; color:#8b6914; letter-spacing:1px;">ScentShop</span>
+    </a>
+    <div class="navbar-nav ms-auto gap-1">
+      <a class="nav-link px-3 rounded-pill" routerLink="/" style="color:#6b5b3e; font-weight:500;">Shop</a>
+      <a class="nav-link px-3 rounded-pill" routerLink="/cart" style="background:#b8860b; color:white; font-weight:500;"> Cart</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container py-4">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="text-center py-4 mt-5" style="color:#aaa; font-size:0.85rem; border-top:1px solid #eee;">
+  © 2026 ScentShop — Premium Fragrances
+</footer>
